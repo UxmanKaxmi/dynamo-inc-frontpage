@@ -1,15 +1,15 @@
 
-particlesJS("particles-js", {
+particlesJS("particles-js-marketing", {
   particles: {
     number: {
-      value: 200,
+      value: 50,
       density: {
         enable: true,
         value_area: 800,
       },
     },
     color: {
-      value: "#ffff",
+      value: "#FDC14D",
     },
     shape: {
       type: "circle",
@@ -27,7 +27,7 @@ particlesJS("particles-js", {
       },
     },
     opacity: {
-      value: 1,
+      value: 55,
       random: false,
       anim: {
         enable: false,
@@ -50,7 +50,7 @@ particlesJS("particles-js", {
       enable: true,
       distance: 150,
       color: "#ffffff",
-      opacity: 1,
+      opacity: 0.4,
       width: 1,
     },
     move: {
