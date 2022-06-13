@@ -2104,7 +2104,6 @@ input[type="button"] {
   margin: 0 0 0 0 !important;
 }
 
-
 #dynamoDesign_desc {
   -webkit-animation-name: textAnimation;
   -webkit-animation-duration: 1s;
@@ -2119,7 +2118,6 @@ input[type="button"] {
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
 }
-
 
 #dynamoMarketing_desc {
   -webkit-animation-name: textAnimation;
@@ -2175,12 +2173,70 @@ input[type="button"] {
   }
 }
 
+#marketing-image1 {
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#marketing-image2 {
+  -webkit-animation-name: marketingAnimation2;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes marketingAnimation2 {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(200px, 500px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px, 0px);
+  }
+}
+
+#marketing-image3 {
+  -webkit-animation-name: marketingAnimation3;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes marketingAnimation3 {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg)
+      translate(-100px, -150px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px, 0px);
+  }
+}
+
 #mobile-image1 {
   -webkit-animation-name: cssAnimation;
   -webkit-animation-duration: 4s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
+}
+#design-image2 {
+  -webkit-animation-name: designImage;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes designImage {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(400px, 200px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1.1) skew(0deg)
+      translate(-10px, 0px);
+  }
 }
 
 #mobile-image2 {

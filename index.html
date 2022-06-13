@@ -27,6 +27,64 @@
 
   <body id="top" class="theme-particles">
     <img
+      id="design-image2"
+      style="
+        display: none;
+        position: absolute;
+        bottom: -3rem;
+        width: 69rem;
+        height: 47rem;
+        right: -14rem;
+        z-index: 3;
+      "
+      src="images/design-image2.png"
+    />
+
+    <img
+      id="marketing-image1"
+      style="
+        display: none;
+        position: absolute;
+        bottom: -8rem;
+        width: 34rem;
+        height: 34rem;
+        right: -6rem;
+        z-index: 99;
+      "
+      src="images/marketing1.png"
+    />
+
+    <img
+      id="marketing-image2"
+      style="
+        display: none;
+        position: absolute;
+        bottom: 2rem;
+        left: 3%;
+        height: 20rem;
+        /* transform: rotate(20deg); */
+        transform: rotate(320deg);
+        z-index: 99;
+      "
+      src="images/marketing2.png"
+    />
+
+    <img
+      id="marketing-image3"
+      style="
+        display: none;
+        position: absolute;
+        top: 1rem;
+        left: 34%;
+        height: 15rem;
+        /* transform: rotate(20deg); */
+        /* transform: rotate(320deg); */
+        z-index: 99;
+      "
+      src="images/marketing3.png"
+    />
+
+    <img
       id="mobile-image1"
       style="
         display: none;
@@ -165,7 +223,7 @@
                 style="display: none"
                 class="counter__time"
               >
-                We Develop Apps
+                We Develop <strong style="color: #7217df">Apps</strong>
               </h1>
 
               <h1
@@ -173,7 +231,7 @@
                 style="display: none"
                 class="counter__time"
               >
-                We Do Marketing
+                We Do <strong style="color: #fdc14d">Marketing</strong>
               </h1>
 
               <h1
@@ -181,7 +239,7 @@
                 style="display: none"
                 class="counter__time"
               >
-                We Make Designs
+                We Make <strong style="color: #11d6bf">Designs</strong>
               </h1>
             </div>
             <!-- end counter -->
@@ -248,27 +306,6 @@
               >
                 Our marketing experts are here to take care of everything from
                 brainstorming a
-                <!--<strong
-                style="
-                  font-weight: 600;
-                  width: 28rem;
-                  height: 8rem;
-                  position: absolute;
-                  transform: skew(334deg);
-                  background: #5a18d9;
-                "
-                id="dynamoMobile_desc"
-                ><strong
-                  style="
-                    color: white;
-                    transform: skew(26deg);
-                    width: inherit;
-                    top: 15%;
-                    left: 12%;
-                    position: fixed;
-                  "
-                  >Mobile Apps</strong
-                ></strong-->
 
                 <strong
                   style="font-weight: bolder; color: #fdc14d; font-size: larger"
@@ -577,6 +614,8 @@
         document.getElementById("particles-js-mobile").style.display = "none";
 
         //images
+        document.getElementById("design-image2").style.display = "block";
+
         //document.getElementById("mobile-image1").style.display = "block";
         //document.getElementById("mobile-image2").style.display = "block";
         //document.getElementById("mobile-image3").style.display = "block";
@@ -596,7 +635,7 @@
           "block";
         document.getElementById("particles-js-mobile").style.display = "block";
 
-        //document.getElementById("mobile-image1").style.display = "none";
+        document.getElementById("design-image2").style.display = "none";
         //document.getElementById("mobile-image2").style.display = "none";
         //document.getElementById("mobile-image3").style.display = "none";
       }
@@ -617,9 +656,9 @@
         document.getElementById("particles-js-mobile").style.display = "none";
 
         //images
-        //document.getElementById("mobile-image1").style.display = "block";
-        //document.getElementById("mobile-image2").style.display = "block";
-        //document.getElementById("mobile-image3").style.display = "block";
+        document.getElementById("marketing-image1").style.display = "block";
+        document.getElementById("marketing-image2").style.display = "block";
+        document.getElementById("marketing-image3").style.display = "block";
       }
 
       function onmouseleaverMarketing() {
@@ -635,9 +674,9 @@
         document.getElementById("particles-js-design").style.display = "block";
         document.getElementById("particles-js-mobile").style.display = "block";
 
-        //document.getElementById("mobile-image1").style.display = "none";
-        //document.getElementById("mobile-image2").style.display = "none";
-        //document.getElementById("mobile-image3").style.display = "none";
+        document.getElementById("marketing-image1").style.display = "none";
+        document.getElementById("marketing-image2").style.display = "none";
+        document.getElementById("marketing-image3").style.display = "none";
       }
 
       function onmouseenterMobile() {
