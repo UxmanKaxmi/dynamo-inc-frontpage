@@ -2,7 +2,7 @@
 particlesJS("particles-js-marketing", {
   particles: {
     number: {
-      value: 50,
+      value: 70,
       density: {
         enable: true,
         value_area: 800,
@@ -27,7 +27,7 @@ particlesJS("particles-js-marketing", {
       },
     },
     opacity: {
-      value: 55,
+      value: 1,
       random: false,
       anim: {
         enable: false,
@@ -37,7 +37,7 @@ particlesJS("particles-js-marketing", {
       },
     },
     size: {
-      value: 3,
+      value: 5,
       random: true,
       anim: {
         enable: false,
