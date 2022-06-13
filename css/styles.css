@@ -2982,10 +2982,9 @@ img.u-pull-left {
 
 .s-header__logo img {
   /*width: 30rem;*/
-  height: 12rem;
-
+  height: 9rem;
   margin: 0;
-  vertical-align: bottom;
+  vertical-align:middle;
 }
 
 /* --------------------------------------------------------------------
