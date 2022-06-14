@@ -483,8 +483,6 @@ summary {
   display: list-item;
 }
 
-
-
 template {
   display: none;
 }
@@ -537,7 +535,6 @@ img,
 video {
   max-width: 100%;
   height: 18rem;
-
 }
 
 pre {
@@ -626,7 +623,7 @@ textarea {
   padding: 0;
 }
 
-.inner-button{
+.inner-button {
   /*background-color: red;*/
 }
 
@@ -662,6 +659,11 @@ textarea {
 
 .row.row-x-left {
   justify-content: flex-start;
+}
+
+.mid-section {
+  display: grid;
+  height: -webkit-fill-available;
 }
 
 .row.row-x-right {
@@ -732,8 +734,8 @@ textarea {
 
 .lg-12 {
   flex: none;
-  width: 92%;
-  margin-left: 5rem;
+  width: 100%;
+  /*margin-left: 5rem;*/
 }
 
 .block-lg-one-eight > .column {
@@ -979,10 +981,15 @@ textarea {
   }
 
   .s-header__logo img {
-    max-width: 80%;
-    width: 20rem !important;
-    height: 5rem !important;
+    /* max-width: 100%; */
+    /* width: 20rem !important; */
+    height: 7rem !important;
     margin: 0;
+    max-width: 80%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+    /* width: 20rem !important; */
     vertical-align: middle;
   }
 }
@@ -2986,20 +2993,23 @@ img.u-pull-left {
   @-webkit-keyframes cssAnimation2 {
     from {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
-      translate(-102rem, -100rem)
+        translate(-102rem, -100rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-22rem, -10rem);
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-22rem, -10rem);
     }
   }
 
   @-webkit-keyframes cssAnimation3 {
     from {
-      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg) 
-      translate(-100rem, 16rem)    }
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(-100rem, 16rem);
+    }
     to {
       -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
-      translate(-18rem, 6rem)    }
+        translate(-18rem, 6rem);
+    }
   }
 
   #marketing-image1 {
@@ -3052,6 +3062,25 @@ img.u-pull-left {
     to {
       -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
         translate(-41rem, -10rem);
+    }
+  }
+
+  #design-image2 {
+    -webkit-animation-name: designImage;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes designImage {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.1) skew(0deg)
+        translate(30rem, 60rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-6rem, 33rem);
     }
   }
 
@@ -3528,12 +3557,12 @@ img.u-pull-left {
 .s-intro__content {
   z-index: 1;
   max-width: var(--width-wider);
-  align-items: flex-end;
-  height: 65vh;
-  /*min-height     : calc(25.5 * var(--space));*/
-  padding-top: 20vh;
-  padding-bottom: 8.8rem;
-  position: relative;
+  align-items: center;
+  /* height: 65vh; */
+  /* min-height: calc(25.5 * var(--space)); */
+  padding-top: 20rem;
+  /* padding-bottom: 8.8rem; */
+  /* position: relative; */
 }
 
 .s-intro__content-bottom {
@@ -3549,7 +3578,7 @@ h1,
 }
 
 .s-intro__content-title {
-  font-size: 35px;
+  font-size: -webkit-xxx-large;
   font-weight: 500;
   line-height: var(--vspace-1_5);
   color: black;
@@ -3735,7 +3764,7 @@ h1,
   }
 
   .s-intro__content-title {
-    font-size: var(--text-xl);
+    font-size: larger;
     line-height: var(--vspace-1_25);
     /*margin-left: 12rem;*/
   }
@@ -3748,7 +3777,7 @@ h1,
 
   @media screen and (max-width: 600px) {
     .s-intro__content {
-      padding-bottom: 5rem;
+      /*padding-bottom: 5rem;*/
     }
 
     .s-intro .counter__time {
@@ -3766,7 +3795,7 @@ h1,
     }
 
     .s-intro__content-title {
-      /*font-size   : var(--text-lg);*/
+      font-size: larger;
       line-height: var(--vspace-1);
     }
 
@@ -3782,12 +3811,17 @@ h1,
   }
 
   @media screen and (max-width: 400px) {
+    .mid-section {
+      display: contents;
+      height: -webkit-fill-available;
+    }
+
     .s-intro .counter__time {
       font-size: 5.6rem;
     }
 
     .s-intro__content-title {
-      font-size: large;
+      font-size: larger;
       line-height: var(--vspace-0_875);
     }
 
@@ -4154,6 +4188,9 @@ h1,
  * footer
  * ------------------------------------------------------------------- */
   @media screen and (max-width: 800px) {
+    #dynamoInc_desc {
+      padding-bottom: 3rem;
+    }
     .s-footer .desc {
       padding-right: 0;
     }
@@ -4163,7 +4200,7 @@ h1,
     .s-footer h4 {
       margin-bottom: var(--vspace-0_5);
     }
-  
+
     .s-footer__info {
       margin-bottom: var(--vspace-1_25);
     }
