@@ -974,6 +974,7 @@ textarea {
   }
 
   .s-header__logo img {
+    max-width: 100%;
     width: 17rem !important;
     height: 5rem !important;
     margin: 0;
@@ -4160,10 +4161,8 @@ h1,
     svg,
     img,
     video {
-      max-width: 100%;
-      height: 18rem;
-      margin-right: 2rem;
-      margin-left: 2rem;
+      max-width: 15%;
+     
     }
 
     .s-footer__info {
