@@ -536,6 +536,7 @@ video {
   max-width: 100%;
   height: 18rem;
   margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 pre {
@@ -970,6 +971,13 @@ textarea {
 
   .hide-on-tab {
     display: none;
+  }
+
+  .s-header__logo img {
+    width: 17rem !important;
+    height: 5rem !important;
+    margin: 0;
+    vertical-align: middle;
   }
 }
 
@@ -2935,6 +2943,112 @@ img.u-pull-left {
  * pagewrap
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 400px) {
+  #mobile-image1 {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  #mobile-image2 {
+    -webkit-animation-name: cssAnimation2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  #mobile-image3 {
+    -webkit-animation-name: cssAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(100rem, -221rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(26rem, -21rem);
+    }
+  }
+  @-webkit-keyframes cssAnimation2 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+      translate(-102rem, -100rem)
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-22rem, -10rem);
+    }
+  }
+
+  @-webkit-keyframes cssAnimation3 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg) 
+      translate(-100rem, 16rem)    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+      translate(-18rem, 6rem)    }
+  }
+
+  #marketing-image1 {
+    -webkit-animation-name: marketingAnimation1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes marketingAnimation1 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(150rem, 150rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(26rem, 24rem);
+    }
+  }
+  #marketing-image2 {
+    -webkit-animation-name: marketingAnimation2;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation2 {
+    from {
+      -webkit-transform: rotate(0deg) scale(1) skew(0deg)
+        translate(200px, 500px);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px, 0px);
+    }
+  }
+
+  #marketing-image3 {
+    -webkit-animation-name: marketingAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation3 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(-100rem, -100rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-41rem, -10rem);
+    }
+  }
+
   .s-pagewrap {
     --header-height: 10.6rem;
   }
@@ -2983,7 +3097,7 @@ img.u-pull-left {
   /*width: 30rem;*/
   height: 9rem;
   margin: 0;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 /* --------------------------------------------------------------------
@@ -3023,6 +3137,27 @@ img.u-pull-left {
  * header
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
+  #marketing-image2 {
+    -webkit-animation-name: marketingAnimation5;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes marketingAnimation5 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(200px, 500px);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-16rem, 18rem);
+    }
+  }
+  .s-intro .counter__time {
+    font-size: 4.6rem !important;
+  }
   .s-header {
     --logo-width: 8rem;
     top: var(--vspace-0_5);
@@ -3033,7 +3168,8 @@ img.u-pull-left {
   }
 
   .s-header__social li {
-    margin-right: 1rem;
+    margin-right: -2.2 !important;
+    margin-left: -4rem;
   }
 
   .s-header__social svg {
@@ -3043,6 +3179,112 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 600px) {
+  #marketing-image1 {
+    -webkit-animation-name: marketingAnimation1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes marketingAnimation1 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(150rem, 150rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(26rem, 24rem);
+    }
+  }
+  #marketing-image2 {
+    -webkit-animation-name: marketingAnimation2;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation2 {
+    from {
+      -webkit-transform: rotate(0deg) scale(1) skew(0deg)
+        translate(200px, 500px);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px, 0px);
+    }
+  }
+
+  #marketing-image3 {
+    -webkit-animation-name: marketingAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation3 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(-100rem, -100rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-41rem, -10rem);
+    }
+  }
+  #marketing-image1 {
+    -webkit-animation-name: marketingAnimation1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes marketingAnimation1 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(150rem, 150rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(26rem, 24rem);
+    }
+  }
+  #marketing-image2 {
+    -webkit-animation-name: marketingAnimation2;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation2 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(200px, 500px);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-16rem, 15rem);
+    }
+  }
+
+  #marketing-image3 {
+    -webkit-animation-name: marketingAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes marketingAnimation3 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(-100rem, -100rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-41rem, -10rem);
+    }
+  }
+
   .s-header {
     --logo-width: 7.2rem;
   }
@@ -3076,7 +3318,8 @@ img.u-pull-left {
   }
 
   .s-header__social li {
-    margin-right: 0.8rem;
+    margin-right: -2.2 !important;
+    margin-left: -4rem;
   }
 }
 
@@ -3494,20 +3737,22 @@ h1,
 
 @media screen and (max-width: 800px) {
   .s-intro .counter__time {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   @media screen and (max-width: 600px) {
     .s-intro__content {
-      padding-bottom: 8rem;
+      padding-bottom: 5rem;
     }
 
     .s-intro .counter__time {
-      font-size: 5rem;
+      font-size: 4.6rem !;
     }
 
     .s-intro__content-bottom {
-      max-width: 400px;
+      max-width: 100%;
+      margin-right: 2rem;
+      margin-left: 2rem;
     }
 
     .s-intro__content-bottom br {
@@ -3526,7 +3771,7 @@ h1,
 
   @media screen and (max-width: 500px) {
     .s-intro .counter__time {
-      font-size: 5.6rem;
+      font-size: 4rem;
     }
   }
 
@@ -3536,7 +3781,7 @@ h1,
     }
 
     .s-intro__content-title {
-      font-size: var(--text-md);
+      font-size: large;
       line-height: var(--vspace-0_875);
     }
 
@@ -3911,6 +4156,14 @@ h1,
   @media screen and (max-width: 700px) {
     .s-footer h4 {
       margin-bottom: var(--vspace-0_5);
+    }
+    svg,
+    img,
+    video {
+      max-width: 100%;
+      height: 18rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
     }
 
     .s-footer__info {
