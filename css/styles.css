@@ -2985,7 +2985,7 @@ img.u-pull-left {
     }
     to {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
-      translate(20rem, -90rem);
+        translate(20rem, -90rem);
     }
   }
 
@@ -2996,7 +2996,7 @@ img.u-pull-left {
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
   }
-  
+
   @-webkit-keyframes cssAnimation2 {
     from {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
@@ -3008,7 +3008,6 @@ img.u-pull-left {
     }
   }
 
-
   #mobile-image3 {
     -webkit-animation-name: cssAnimation3;
     -webkit-animation-duration: 2s;
@@ -3016,8 +3015,6 @@ img.u-pull-left {
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
   }
-
-  
 
   @-webkit-keyframes cssAnimation3 {
     from {
@@ -3093,12 +3090,12 @@ img.u-pull-left {
 
   @-webkit-keyframes designImage {
     from {
-      -webkit-transform: rotate(0deg) scale(0.1) skew(0deg)
-        translate(30rem, 60rem);
+      -webkit-transform: rotate(0deg) scale(0.6) skew(0deg)
+        translate(50rem, 50rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
-        translate(-6rem, 33rem);
+      -webkit-transform: rotate(0deg) scale(0.8) skew(0deg)
+        translate(5rem, 10rem);
     }
   }
 
@@ -3376,7 +3373,7 @@ img.u-pull-left {
         translate(26rem, -100rem);
     }
   }*/
-/*
+  /*
   #mobile-image2 {
     -webkit-animation-name: cssAnimation2;
     -webkit-animation-duration: 2s;
@@ -3923,6 +3920,135 @@ h1,
   }
 
   @media screen and (max-width: 600px) {
+    #mobile-image1 {
+      -webkit-animation-name: cssAnimation5;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes cssAnimation5 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+          translate(100rem, -221rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(20rem, -140rem);
+      }
+    }
+
+    #mobile-image2 {
+      -webkit-animation-name: cssAnimation2;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes cssAnimation2 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(-102rem, -100rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+          translate(-22rem, -10rem);
+      }
+    }
+
+    #mobile-image3 {
+      -webkit-animation-name: cssAnimation3;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes cssAnimation3 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(-100rem, 16rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+          translate(-18rem, 6rem);
+      }
+    }
+
+    #marketing-image1 {
+      -webkit-animation-name: marketingAnimation1;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes marketingAnimation1 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+          translate(150rem, 150rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(26rem, 24rem);
+      }
+    }
+    #marketing-image2 {
+      -webkit-animation-name: marketingAnimation2;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes marketingAnimation2 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(50rem, 50rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.4) skew(0deg)
+          translate(-25rem, 25rem);
+      }
+    }
+
+    #marketing-image3 {
+      -webkit-animation-name: marketingAnimation3;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes marketingAnimation3 {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+          translate(-100rem, -100rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+          translate(-41rem, -10rem);
+      }
+    }
+
+    #design-image2 {
+      -webkit-animation-name: designImage;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes designImage {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.6) skew(0deg)
+          translate(50rem, 50rem);
+      }
+      to {
+        -webkit-transform: rotate(0deg) scale(0.8) skew(0deg)
+          translate(5rem, 10rem);
+      }
+    }
+
     .s-intro__content {
       /*padding-bottom: 5rem;*/
     }
@@ -3944,8 +4070,7 @@ h1,
 
     .s-intro__content-title {
       height: 10rem;
-
-      font-size: larger;
+      font-size: medium;
       line-height: var(--vspace-1);
     }
 
