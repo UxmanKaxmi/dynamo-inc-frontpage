@@ -3836,7 +3836,7 @@ h1,
     }
 
     .s-intro__content-title {
-      font-size: larger;
+      font-size: medium;
       line-height: var(--vspace-0_875);
     }
 
