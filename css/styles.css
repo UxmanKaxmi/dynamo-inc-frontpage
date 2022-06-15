@@ -3355,6 +3355,24 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
+  #mobile-image1 {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(100rem, -221rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.7) skew(0deg)
+        translate(26rem, -21rem);
+    }
+  }
   .s-header {
     --logo-width: 6rem;
   }
@@ -3801,6 +3819,7 @@ h1,
 
     .s-intro__content-bottom {
       max-width: 100%;
+      margin-bottom: -3rem;
       /*padding-right: 5rem;
       padding-left: 2rem;*/
     }
