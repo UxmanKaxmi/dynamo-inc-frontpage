@@ -259,7 +259,7 @@
   :root {
     --multiplier: 0.9375;
     background-size: contain;
-    height:100% !important;
+    height: 100% !important;
     overflow: hidden !important;
   }
 }
@@ -268,7 +268,6 @@
  * ## grid variables
  * ------------------------------------------------------------------- */
 :root {
-  
   /* widths for rows and containers
      */
   --width-full: 100%;
@@ -280,12 +279,11 @@
   --width-narrower: 800px;
   --width-grid-max: var(--width-max);
   background-size: contain;
-  height:100% !important;
+  height: 100% !important;
   overflow: hidden !important;
   /* gutter
      */
-     
-     
+
   --gutter: 2.4rem;
 }
 
@@ -295,7 +293,7 @@
   :root {
     --gutter: 2rem;
     background-size: contain;
-    height:100% !important;
+    height: 100% !important;
     overflow: hidden !important;
   }
 }
@@ -306,7 +304,7 @@
   :root {
     --gutter: 1rem;
     background-size: contain;
-    height:100% !important;
+    height: 100% !important;
     overflow: hidden !important;
   }
 }
@@ -325,9 +323,8 @@ html {
 }
 
 body.noscroll {
- 
   background-size: contain;
-  height:100% !important;
+  height: 100% !important;
   overflow: hidden !important;
 }
 
@@ -3803,8 +3800,8 @@ h1,
 
     .s-intro__content-bottom {
       max-width: 100%;
-      margin-right: 2rem;
-      margin-left: 2rem;
+      padding-right: 5rem;
+      padding-left: 2rem;
     }
 
     .s-intro__content-bottom br {
