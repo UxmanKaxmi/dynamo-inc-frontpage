@@ -3355,25 +3355,8 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
-  
   #mobile-image1 {
     -webkit-animation-name: cssAnimation;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-  }
-
-  #mobile-image2 {
-    -webkit-animation-name: cssAnimation2;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-  }
-
-  #mobile-image3 {
-    -webkit-animation-name: cssAnimation3;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
@@ -3390,6 +3373,15 @@ img.u-pull-left {
         translate(26rem, -100rem);
     }
   }
+
+  #mobile-image2 {
+    -webkit-animation-name: cssAnimation2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
   @-webkit-keyframes cssAnimation2 {
     from {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
@@ -3399,6 +3391,14 @@ img.u-pull-left {
       -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
         translate(-22rem, -10rem);
     }
+  }
+
+  #mobile-image3 {
+    -webkit-animation-name: cssAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
   }
 
   @-webkit-keyframes cssAnimation3 {
@@ -3440,10 +3440,11 @@ img.u-pull-left {
   @-webkit-keyframes marketingAnimation2 {
     from {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
-      translate(-100rem, 100rem);
+        translate(-100rem, 100rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-10rem, 25rem);
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
+        translate(-10rem, 25rem);
     }
   }
 
@@ -3475,12 +3476,10 @@ img.u-pull-left {
 
   @-webkit-keyframes designImage {
     from {
-      -webkit-transform: rotate(0deg) scale(0.8) skew(0deg)
-        translate(0,100rem);
+      -webkit-transform: rotate(0deg) scale(0.8) skew(0deg) translate(0, 100rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(1) skew(0deg)
-        translate(0rem,10rem);
+      -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0rem, 10rem);
     }
   }
   .s-header {
@@ -3912,7 +3911,6 @@ h1,
     line-height: var(--vspace-1_25);
     /*margin-left: 12rem;*/
     height: 10rem;
-
   }
 }
 
