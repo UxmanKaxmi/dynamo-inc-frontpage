@@ -3373,7 +3373,7 @@ img.u-pull-left {
         translate(26rem, -100rem);
     }
   }
-
+/*
   #mobile-image2 {
     -webkit-animation-name: cssAnimation2;
     -webkit-animation-duration: 2s;
@@ -3410,7 +3410,7 @@ img.u-pull-left {
       -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
         translate(-18rem, 6rem);
     }
-  }
+  }*/
 
   #marketing-image1 {
     -webkit-animation-name: marketingAnimation1;
