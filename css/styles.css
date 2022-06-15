@@ -3801,8 +3801,8 @@ h1,
 
     .s-intro__content-bottom {
       max-width: 100%;
-      padding-right: 5rem;
-      padding-left: 2rem;
+      /*padding-right: 5rem;
+      padding-left: 2rem;*/
     }
 
     .s-intro__content-bottom br {
