@@ -3355,9 +3355,9 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
-  #mobile-image1 {
+  /*#mobile-image1 {
     -webkit-animation-name: cssAnimation;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
@@ -3372,7 +3372,7 @@ img.u-pull-left {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
         translate(26rem, -100rem);
     }
-  }
+  }*/
 /*
   #mobile-image2 {
     -webkit-animation-name: cssAnimation2;
