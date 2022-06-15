@@ -2972,11 +2972,21 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 400px) {
   #mobile-image1 {
-    -webkit-animation-name: cssAnimation;
+    -webkit-animation-name: cssAnimation5;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes cssAnimation5 {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(100rem, -221rem);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
+        translate(26rem, -  100rem);
+    }
   }
 
   #mobile-image2 {
@@ -2986,25 +2996,7 @@ img.u-pull-left {
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
   }
-
-  #mobile-image3 {
-    -webkit-animation-name: cssAnimation3;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-  }
-
-  @-webkit-keyframes cssAnimation {
-    from {
-      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
-        translate(100rem, -221rem);
-    }
-    to {
-      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
-        translate(26rem, -21rem);
-    }
-  }
+  
   @-webkit-keyframes cssAnimation2 {
     from {
       -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
@@ -3015,6 +3007,17 @@ img.u-pull-left {
         translate(-22rem, -10rem);
     }
   }
+
+
+  #mobile-image3 {
+    -webkit-animation-name: cssAnimation3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  
 
   @-webkit-keyframes cssAnimation3 {
     from {
