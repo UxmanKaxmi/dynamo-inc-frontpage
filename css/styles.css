@@ -3362,6 +3362,13 @@ img.u-pull-left {
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
+    
+    
+   animation-name: cssAnimation5;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
   }
 
   #mobile-image2 {
