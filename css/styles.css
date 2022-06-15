@@ -3355,8 +3355,9 @@ img.u-pull-left {
 }
 
 @media screen and (max-width: 400px) {
+  
   #mobile-image1 {
-    -webkit-animation-name: cssAnimation;
+    -webkit-animation-name: cssAnimation5;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
@@ -3379,7 +3380,7 @@ img.u-pull-left {
     -webkit-animation-fill-mode: forwards;
   }
 
-  @-webkit-keyframes cssAnimation {
+  @-webkit-keyframes cssAnimation5 {
     from {
       -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
         translate(100rem, -221rem);
@@ -3421,12 +3422,12 @@ img.u-pull-left {
 
   @-webkit-keyframes marketingAnimation1 {
     from {
-      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+      -webkit-transform: rotate(0deg) scale(0.1) skew(0deg)
         translate(150rem, 150rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.3) skew(0deg)
-        translate(26rem, 24rem);
+      -webkit-transform: rotate(0deg) scale(0.2) skew(0deg)
+        translate(26rem, 50rem);
     }
   }
   #marketing-image2 {
@@ -3442,7 +3443,7 @@ img.u-pull-left {
       translate(-100rem, 100rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-10rem, 20rem);
+      -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-10rem, 25rem);
     }
   }
 
@@ -3725,6 +3726,7 @@ h1,
   line-height: var(--vspace-1_5);
   color: black;
   margin-bottom: var(--vspace-0_25);
+  height: 10rem;
 }
 
 /* --------------------------------------------------------------------
@@ -3909,6 +3911,8 @@ h1,
     font-size: larger;
     line-height: var(--vspace-1_25);
     /*margin-left: 12rem;*/
+    height: 10rem;
+
   }
 }
 
@@ -3938,6 +3942,8 @@ h1,
     }
 
     .s-intro__content-title {
+      height: 10rem;
+
       font-size: larger;
       line-height: var(--vspace-1);
     }
