@@ -3388,7 +3388,7 @@ img.u-pull-left {
     from {
       -webkit-transform: rotate(0deg) scale(0.1) skew(0deg)
         translate(100rem, -221rem);
-      transform: rotate(0deg) scale(0.1) skew(0deg) translate(100rem, -221rem);
+      transform: rotate(0deg) scale(0.1) skew(0deg) translate(800rem, -100rem);
     }
     to {
       -webkit-transform: rotate(0deg) scale(0.4) skew(0deg)
