@@ -3369,8 +3369,8 @@ img.u-pull-left {
         translate(100rem, -221rem);
     }
     to {
-      -webkit-transform: rotate(0deg) scale(0.7) skew(0deg)
-        translate(26rem, -21rem);
+      -webkit-transform: rotate(0deg) scale(0.4) skew(0deg)
+        translate(26rem, -55rem);
     }
   }
   .s-header {
