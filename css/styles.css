@@ -3410,7 +3410,7 @@ img.u-pull-left {
       -webkit-transform: rotate(0deg) scale(0.5) skew(0deg)
         translate(-18rem, 6rem);
     }
-  }*/
+  }
 
   #marketing-image1 {
     -webkit-animation-name: marketingAnimation1;
@@ -3481,7 +3481,7 @@ img.u-pull-left {
     to {
       -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0rem, 10rem);
     }
-  }
+  }*/
   .s-header {
     --logo-width: 6rem;
   }
