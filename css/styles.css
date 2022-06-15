@@ -258,6 +258,9 @@
 @media screen and (max-width: 600px) {
   :root {
     --multiplier: 0.9375;
+    background-size: contain;
+    height:100% !important;
+    overflow: hidden !important;
   }
 }
 
@@ -265,6 +268,7 @@
  * ## grid variables
  * ------------------------------------------------------------------- */
 :root {
+  
   /* widths for rows and containers
      */
   --width-full: 100%;
@@ -275,9 +279,13 @@
   --width-narrow: 1000px;
   --width-narrower: 800px;
   --width-grid-max: var(--width-max);
-
+  background-size: contain;
+  height:100% !important;
+  overflow: hidden !important;
   /* gutter
      */
+     
+     
   --gutter: 2.4rem;
 }
 
@@ -286,6 +294,9 @@
 @media screen and (max-width: 1200px) {
   :root {
     --gutter: 2rem;
+    background-size: contain;
+    height:100% !important;
+    overflow: hidden !important;
   }
 }
 
@@ -294,6 +305,9 @@
 @media screen and (max-width: 600px) {
   :root {
     --gutter: 1rem;
+    background-size: contain;
+    height:100% !important;
+    overflow: hidden !important;
   }
 }
 
@@ -310,8 +324,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
+body.noscroll {
+ 
+  background-size: contain;
+  height:100% !important;
+  overflow: hidden !important;
 }
 
 main {

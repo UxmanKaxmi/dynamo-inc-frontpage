@@ -10,6 +10,7 @@
     <script>
       document.documentElement.classList.remove("no-js");
       document.documentElement.classList.add("js");
+      
     </script>
 
     <!-- CSS
@@ -25,17 +26,18 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
 
-  <body id="top" class="theme-particles">
+  <body id="top" class="theme-particles" scroll="no" style="overflow: hidden">
     <img
       id="design-image2"
       style="
-        display: none;
+        display: compact;
         position: absolute;
         bottom: -3rem;
         width: 69rem;
         height: 47rem;
         right: -14rem;
         z-index: 3;
+        overflow: -moz-hidden-unscrollable;
       "
       src="images/design-image2.png"
     />
@@ -612,6 +614,7 @@
     ================================================== -->
 
     <script>
+      
       function onmouseenterDesign() {
         document.getElementById("dynamoInc_head").style.display = "none";
         document.getElementById("dynamoInc_desc").style.display = "none";
