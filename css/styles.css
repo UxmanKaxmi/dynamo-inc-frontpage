@@ -638,6 +638,7 @@ textarea {
 }
 
 .inner-button {
+  padding: 1rem;
   /*background-color: red;*/
 }
 
