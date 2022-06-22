@@ -58,11 +58,11 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
 
-  <header>
+  <header style="position: absolute; width: -webkit-fill-available">
     <!-- Navbar -->
 
     <nav
-      class="navbar navbar-expand-lg fixed-top navbar-scroll fadeInFromTopAnimation navbar-light"
+      class="navbar navbar-expand-lg navbar-scroll fadeInFromTopAnimation navbar-light"
       style="animation-duration: 1s"
     >
       <a class="navbar-brand col-3 p-3" href="#">
@@ -159,71 +159,78 @@
       </div>
     </div>
 
-    <div class="black-block content flex-row" style="width: 100%">
+    <div
+      class="black-block content flex-row pt-5 pb-5"
+      style="
+        width: 100%;
+        padding-top: 5vmax !important;
+        padding-bottom: 5vmax !important;
+      "
+    >
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client1.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client6.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client3.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client4.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client5.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client9.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client7.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
           <div class="swiper-slide">
             <img
-              id="brand-1"
-              src="images/brands/brand-1.png"
+              src="images/brands/4x/client8.png"
               alt=""
-              class=".img-fluid logo d-inline-block align-text-center client-logo1"
+              class=".img-fluid d-inline-block align-text-center client-logo1"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="images/brands/4x/client2.png"
+              alt=""
+              class=".img-fluid d-inline-block align-text-center client-logo1"
             />
           </div>
         </div>
@@ -273,7 +280,7 @@
       freeMode: true,
       spaceBetween: 0,
       grabCursor: true,
-      slidesPerView: 3,
+      slidesPerView: 4,
       loop: true,
       autoplay: {
         delay: 1,
