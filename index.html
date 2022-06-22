@@ -404,6 +404,7 @@
           >
             <div class="inner-button">
               <button
+                onclick="onClickMobile()"
                 id="mobile-button"
                 onmouseenter="onmouseenterMobile()"
                 onmouseleave="onmouseleaverMobile()"
@@ -765,6 +766,13 @@
         document.getElementById("mobile-image1").style.display = "none";
         document.getElementById("mobile-image2").style.display = "none";
         document.getElementById("mobile-image3").style.display = "none";
+      }
+
+      //Buttons
+
+      function  onClickMobile(){
+        window.open("./index-mobile.html","_self")
+
       }
     </script>
     <script src="js/plugins.js"></script>

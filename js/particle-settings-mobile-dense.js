@@ -2,7 +2,7 @@
 particlesJS("particles-js-mobile", {
   particles: {
     number: {
-      value: 20,
+      value: 50,
       density: {
         enable: true,
         value_area: 800,
