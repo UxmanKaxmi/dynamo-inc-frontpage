@@ -240,6 +240,12 @@ a {
 
 .headingText {
   font-weight: "900" !important;
+  border-bottom: 5px solid #7217df;
+  display: inline-block;
+  border-radius: 7px;
+  border-top-left-radius: 20px;
+
+  line-height: 1;
   /*text-align: center;*/
   /*padding-left: 3rem !important;
   padding-right: 3rem !important;*/
@@ -288,7 +294,12 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation: fadeIn;
   animation-duration: 2s;
-  padding-bottom: 1rem !important;
+}
+
+.text-heading {
+  padding-bottom: 3rem !important;
+  margin-left: 7rem !important;
+  margin-right: 7rem !important;
 }
 
 @keyframes fadeIn {
@@ -451,8 +462,8 @@ a {
 }
 .service-image {
   position: absolute;
-  top: -10vh;
-  height: 25vh;
+  top: -10vmin;
+  /*height: 22vh;*/
   /*align-self: flex-start;*/
   object-fit: contain;
   /*padding: 5rem !important;
@@ -460,19 +471,19 @@ a {
   /*margin-left: 2vh;
   margin-right: 2vh;*/
 
-  /*width: 25vh !important;*/
+  width: 25vmin !important;
   filter: drop-shadow(19px 25px 25px hsla(264, 100%, 78%, 1));
 }
 
 .card-body {
   max-width: 80%;
   align-self: center !important;
-   position: absolute;
+  position: absolute;
   bottom: 0;
 }
 .card-service {
-  height: 22vmin !important;
-  width: 22vmin !important ;
+  height: 24vmin !important;
+  width: 24vmin !important ;
   -webkit-box-shadow: 15px 20px 35px 24px rgba(114, 23, 223, 0.05);
   box-shadow: 15px 20px 35px 24px rgba(114, 23, 223, 0.05);
   border: 0 !important;
@@ -480,7 +491,7 @@ a {
 .service-heading {
   text-align: center;
   font-weight: 800;
-  font-size: 1.5rem !important;
+  /*font-size: 1.5rem !important;*/
 }
 .col {
   flex: 0 0 0% !important;
@@ -492,6 +503,7 @@ a {
 }
 
 .service-image-card {
+  margin-bottom: 6rem !important;
 }
 
 @media (min-width: 576px) {
@@ -507,6 +519,36 @@ a {
 
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .card-body {
+    max-width: 100%;
+    align-self: center !important;
+    position: absolute;
+    bottom: 0;
+  }
+  .service-heading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem !important;
+  }
+  .headingTextService {
+    font-weight: "900" !important;
+    font-size: 2rem;
+  }
+
+  /*.fadeInAnimation {
+    padding-bottom: 1rem !important;
+    margin-left: 7rem !important;
+    margin-right: 7rem !important;
+  }*/
+
+  .text-heading {
+    padding-bottom: 1rem !important;
+    margin-left: 7rem !important;
+    margin-right: 7rem !important;
+  }
+  .display-2 {
+    font-size: 2.5rem;
+  }
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
@@ -515,6 +557,12 @@ a {
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1600px) {
+  .fadeInAnimation {
+    /*padding-bottom: 4rem !important;*/
+  }
+  .display-2 {
+    font-size: 3.5rem !important;
+  }
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
@@ -528,7 +576,7 @@ a {
     .service-heading {
       text-align: center;
       font-weight: 800;
-      font-size: 2.5rem !important;
+      /*font-size: 2.5rem !important;*/
     }
   }
 }
