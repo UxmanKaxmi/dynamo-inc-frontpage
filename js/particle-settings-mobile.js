@@ -1,4 +1,3 @@
-
 particlesJS("particles-js-mobile", {
   particles: {
     number: {
@@ -109,5 +108,3 @@ particlesJS("particles-js-mobile", {
   },
   retina_detect: true,
 });
-
-

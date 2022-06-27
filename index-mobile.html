@@ -1,293 +1,432 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <title>Dynamo Inc - your digital partner.</title>
 
-    <!--<script>
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <title>Dynamo Inc - your digital partner.</title>
+
+  <!--<script>
       document.documentElement.classList.remove("no-js");
       document.documentElement.classList.add("js");
     </script>-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <link rel="stylesheet" href="css/styles-mobile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/styles-mobile.css" />
 
-    <!-- favicons
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+</head>
 
-  <header style="position: absolute; width: -webkit-fill-available">
-    <!-- Navbar -->
+<header style="position: absolute; width: -webkit-fill-available">
+  <!-- Navbar -->
 
-    <nav
-      class="navbar navbar-expand-lg navbar-scroll fadeInFromTopAnimation navbar-light"
-      style="animation-duration: 1s"
-    >
-      <a class="navbar-brand col-3 p-3" href="#">
-        <img
-          src="images/dynamo-apps-logo.png"
-          alt=""
-          class=".img-fluid logo d-inline-block align-text-center"
-        />
-      </a>
+  <nav class="navbar navbar-expand-lg navbar-scroll fadeInFromTopAnimation navbar-light" style="animation-duration: 1s">
+    <a class="navbar-brand col-3 p-3" href="#">
+      <img src="images/dynamo-apps-logo.png" alt="" class=".img-fluid logo d-inline-block align-text-center" />
+    </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-4 me-5" href="#!">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-4 me-5" href="#!">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-4 me-5" href="#!">Contact Us</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-flex flex-row">
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#!">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#!">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#!">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-4 me-5" href="#!">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-4 me-5" href="#!">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-4 me-5" href="#!">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#!">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#!">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#!">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-  <body id="particles-js-mobile">
-    <div class="d-flex vh-100 align-items-center justify-content-center">
-      <div class="">
-        <div class="row mb-5">
-          <div class="col-12 colnew">
-            <h1
-              class="display-2 w-100 fw-bolder headingText fadeInAnimation"
-              style="animation-duration: 2s"
-            >
-              Next-gen enterprise <br />
-              software development company
-            </h1>
-          </div>
+<body id="particles-js-mobile">
+  <div class="d-flex vh-100 align-items-center justify-content-center">
+    <div class="">
+      <div class="row mb-5">
+        <div class="col-12 colnew">
+          <h1 class="display-2 w-100 fw-bolder headingText2 fadeInAnimation" style="animation-duration: 2s">
+            Next-gen enterprise <br />
+            software development company
+          </h1>
         </div>
+      </div>
 
-        <div class="row">
-          <div
-            class="col-6 colnew fadeInFromBottomAnimation"
-            style="animation-duration: 1s"
-          >
-            <h1 class="fs-2 fw-bold headingText pt-5">
-              We think
-              <span id="main-text-slider" href="#" class="downHeading"
-                >New</span
-              >
-            </h1>
-          </div>
-          <div class="col-4 align-self-end">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button class="shadow-lg btn btn-primary" type="button">
-                Let's Talk
-              </button>
-            </div>
+      <div class="row">
+        <div class="col-6 colnew fadeInFromBottomAnimation" style="animation-duration: 1s">
+          <h1 class="fs-2 fw-bold headingText2 pt-5">
+            We think
+            <span id="main-text-slider" href="#" class="downHeading">New</span>
+          </h1>
+        </div>
+        <div class="col-4 align-self-end">
+          <div class="d-grid gap-2 col-8 mx-auto">
+            <button class="shadow-lg btn btn-primary" type="button">
+              Let's Talk
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-    <div
-      class="black-block content flex-row pt-5 pb-5"
-      style="
+  </div>
+  <!--data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"-->
+  <div class="black-block content flex-row pt-5 pb-5" style="
         width: 100%;
         padding-top: 5vmax !important;
         padding-bottom: 5vmax !important;
-      "
-    >
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client1.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client6.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client3.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client4.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client5.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client9.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client7.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client8.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
+      ">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client1.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client6.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client3.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client4.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client5.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client9.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client7.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client8.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
+        </div>
 
-          <div class="swiper-slide">
-            <img
-              src="images/brands/4x/client2.png"
-              alt=""
-              class=".img-fluid d-inline-block align-text-center client-logo1"
-            />
-          </div>
+        <div class="swiper-slide">
+          <img src="images/brands/4x/client2.png" alt=""
+            class=".img-fluid d-inline-block align-text-center client-logo1" />
         </div>
       </div>
     </div>
-  </body>
+  </div>
 
-  <script src="js/main.js"></script>
+  <div class="bg-transparent h-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" r
+    data-aos-once="false" data-aos-anchor-placement="top-center" style="">
+    <!--<div class=" container-fluid vh-100 flex-md-column d-flex vh-100 " style="">
+      
 
-  <script src="js/particles.min.js"></script>
-  <script src="js/particle-settings-mobile-dense.js"></script>
-  <script type="text/javascript">
+      <div class="w-80 fadeInAnimation ps-5 ms-5 pt-5 mt-5 pb-5 mb-5">
+        <h1 class="display-2 w-100 fw-bolder headingText fadeInAnimation  text-uppercase"
+          style="animation-duration: 2s;height: min-content;">
+          Our Services
+        </h1>
+        <h3 class=" w-100 fw-bolder headingText fadeInAnimation" style="animation-duration: 2s;height: min-content;">
+          Our developers are here to make your ideas into a fully functional business
+        </h3>
+        <h3 class=" w-100 fw-bolder headingText fadeInAnimation" style="animation-duration: 2s;height: min-content;">
+        </h3>
+      </div>
+
+      <div class="row  justify-content-evenly service-image-card  ms-5 me-5 ps-5 pe-5 mb-3 mt-5" style="">
+        <div class="col col-card" style="">
+
+          <div class="card card-service " style="">
+
+            <img src="images/icons/Mobile_app_3d.png" width="" alt="" style="  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);" class=" align-text-center p-5 service-image" />
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title    service-heading mb-4">Mobile App Development</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col col-card" style="">
+          <div class="card card-service " style="">
+
+            <img src="images/icons/website-3d.png" alt="" style="  -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);" class="align-text-center p-5 service-image" />
+
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title   service-heading mb-4">Website Development</h5>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col col-card" style="">
+          <div class="card card-service " style="">
+
+            <img src="images/icons/Computer.png" alt="" style=" -webkit-transform: scaleX(-1);transform: scaleX(-1);"
+              class=" align-text-center p-5 service-image" />
+
+
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title  service-heading mb-4">Software Development</h5>
+           
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row  justify-content-evenly service-image-card  ms-5 me-5 ps-5 pe-5 mb-3 mt-5 pt-5" style="">
+
+        <div class="col col-card" style="">
+
+          <div class="card card-service " style="">
+
+            <img src="images/icons/idea.png" width="" alt="" style="  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);" class=" align-text-center p-5 service-image" />
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title   service-heading mb-4">Custom Development</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col col-card" style="">
+
+          <div class="card card-service " style="">
+
+            <img src="images/icons/gear.png" width="" alt="" style="  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);" class=" align-text-center p-5 service-image" />
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title   service-heading mb-4">Automation</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col col-card" style="">
+
+          <div class="card card-service " style="">
+
+            <img src="images/icons/gear.png" width="" alt="" style="  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);" class=" align-text-center p-5 service-image" />
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title   service-heading mb-4">Automation</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>-->
+
+    <div class=" container-fluid vh-100 " style=" padding-top: 8rem; padding-bottom: 8rem;">
+      <div class="w-60 fadeInAnimation ps-5 ms-5 pt-5 mt-5 pb-5 mb-5">
+        <h1 class="display-2 w-100 fw-bolder headingText fadeInAnimation  text-uppercase"
+          style="animation-duration: 2s;height: min-content;">
+          Our Services
+        </h1>
+        <h3 class=" w-100 fw-bolder headingText fadeInAnimation" style="animation-duration: 2s;height: min-content;">
+          Our developers are here to make your ideas into a fully functional business
+        </h3>
+        <h3 class=" w-100 fw-bolder headingText fadeInAnimation" style="animation-duration: 2s;height: min-content;">
+        </h3>
+      </div>
+
+      <div class="row  justify-content-center service-image-card  ms-5 me-5 ps-5 pe-5 mb-3 mt-5" style="">
+        <div class="col col-card" style="">
+
+          <div class="card card-service " style="">
+
+            <img src="images/icons/Mobile_app_3d.png" width="" alt="" style="  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);" class=" align-text-center p-5 service-image" />
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title    service-heading mb-4">Mobile App Development</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col col-card" style="">
+          <div class="card card-service " style="">
+
+            <img src="images/icons/website-3d.png" alt="" style="  -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);" class="align-text-center p-5 service-image" />
+
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title   service-heading mb-4">Website Development</h5>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col col-card" style="">
+          <div class="card card-service " style="">
+
+            <img src="images/icons/Computer.png" alt="" style=" -webkit-transform: scaleX(-1);transform: scaleX(-1);"
+              class=" align-text-center p-5 service-image" />
+
+
+
+            <div class="card-body p-4  pt-0">
+              <h5 class="card-title  service-heading mb-4">Software Development</h5>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+  </div>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/particle-settings-mobile-dense.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    AOS.init();
+
+    //your stuff
+
     $(document).ready(function () {
-      //your stuff
+      const mainSlider = document.getElementById("main-text-slider");
+      const timer = () => {
+        let text = mainSlider.innerText;
+        setTimeout(() => {
+          switch (text) {
+            case "New":
+              mainSlider.innerText = "Future";
+              break;
 
-      $(document).ready(function () {
-        const mainSlider = document.getElementById("main-text-slider");
-        const timer = () => {
-          let text = mainSlider.innerText;
-          setTimeout(() => {
-            switch (text) {
-              case "New":
-                mainSlider.innerText = "Future";
-                break;
+            case "Future":
+              mainSlider.innerText = "Value";
+              break;
 
-              case "Future":
-                mainSlider.innerText = "Value";
-                break;
+            case "Value":
+              mainSlider.innerText = "New";
+              break;
 
-              case "Value":
-                mainSlider.innerText = "New";
-                break;
-
-              default:
-                break;
-            }
-            timer();
-          }, 2000);
-        };
-        timer();
-      });
+            default:
+              break;
+          }
+          timer();
+        }, 2000);
+      };
+      timer();
     });
-  </script>
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      loop: true,
-      freeMode: true,
-      spaceBetween: 0,
-      grabCursor: true,
-      slidesPerView: 4,
-      loop: true,
-      autoplay: {
-        delay: 1,
-      },
-      freeMode: true,
-      speed: 5000,
-      freeModeMomentum: true,
-    });
-  </script>
+  });
+</script>
+<script>
+  var swiper = new Swiper(".swiper-container", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    slidesPerView: 4,
+    loop: true,
+    autoplay: {
+      delay: 1,
+    },
+    freeMode: true,
+    speed: 5000,
+    freeModeMomentum: true,
+  });
+</script>
+<script>
+  AOS.init();
+</script>
+
 </html>
