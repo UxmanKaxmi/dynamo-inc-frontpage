@@ -30,6 +30,13 @@ body {
 
 a {
   text-decoration: underline;
+  color: transparent !important;
+}
+.row {
+  --bs-gutter-x: 0 !important;
+
+  /*--bs-gutter-x: 1.5rem !important;*/
+  --bs-gutter-y: 0 !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -221,6 +228,11 @@ a {
   width: 25vmax;
   height: auto;
 }
+.logo-footer {
+  width: auto;
+  height: 5vmax;
+  /*padding: 1vh;*/
+}
 .particles-js-canvas-el {
   width: 100%;
   height: 100%;
@@ -246,6 +258,19 @@ a {
   border-top-left-radius: 20px;
 
   line-height: 1;
+  /*text-align: center;*/
+  /*padding-left: 3rem !important;
+  padding-right: 3rem !important;*/
+}
+
+.contactUsText {
+  font-weight: "900" !important;
+  color: white;
+  /*border-bottom: 5px solid #7217df;*/
+  display: inline-block;
+
+  /*margin-bottom: 4rems;*/
+
   /*text-align: center;*/
   /*padding-left: 3rem !important;
   padding-right: 3rem !important;*/
@@ -506,6 +531,150 @@ a {
   margin-bottom: 6rem !important;
 }
 
+.contact-us-card {
+  height: 90vh !important;
+  background-color: #000;
+  /*padding-left: 20rem !important;
+  padding-right: 20rem !important;*/
+  justify-content: center !important;
+  align-content: center !important;
+}
+
+.form-floating > label {
+  color: white !important;
+  border-top: transparent !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+  border-radius: 0 !important;
+}
+
+.form-control {
+  color: #fff !important;
+  background-color: transparent !important;
+  width: 90% !important;
+  border: 1px solid #fff;
+
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 0 !important;
+
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  box-shadow: none !important;
+
+  color: #fff !important;
+  background-color: #000;
+  border-color: 1px solid #fff !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0 !important;
+  border-top: transparent !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.attach-text {
+  font-size: larger;
+  color: white;
+}
+.upto-text {
+  font-size: large;
+  color: white;
+  opacity: 0.5;
+}
+
+.privacy-text {
+  font-size: small !important;
+  opacity: 1;
+  color: white !important;
+}
+.form-check-label {
+  color: white !important;
+}
+
+.form-check-input:checked {
+  font-size: smaller !important;
+
+  background-color: #7217df;
+  border-color: #7217df;
+}
+.footer-heading {
+  font-size: xx-large !important;
+  color: white !important;
+  font-weight: 700;
+}
+.inner-footer {
+  width: 60% !important;
+}
+
+.footer-section-card {
+  background-color: #000 !important;
+}
+.offices-text {
+  opacity: 0.5 !important;
+}
+
+.icon-footer {
+  margin-top: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+.row-inner-footer {
+  margin-bottom: 5rem !important;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ------------------------------    Responsive CSS    ------------------------------  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
 @media (min-width: 576px) {
 }
 
@@ -546,8 +715,15 @@ a {
     margin-left: 7rem !important;
     margin-right: 7rem !important;
   }
+  .contact-heading {
+    /*padding-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;*/
+    /*width: 80% !important;*/
+    width: 60% !important;
+  }
   .display-2 {
-    font-size: 2.5rem;
+    font-size: 2.5r em;
   }
 }
 
