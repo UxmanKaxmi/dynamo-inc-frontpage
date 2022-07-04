@@ -275,6 +275,23 @@ a {
   /*padding-left: 3rem !important;
   padding-right: 3rem !important;*/
 }
+.fixed-bottom {
+  padding: 2vh !important;
+  background-color: #7217df !important;
+}
+
+.fixed-bottom-text {
+  font-size: small;
+
+  color: white;
+}
+.fixed-bottom-text-x {
+  margin-left: 5rem;
+  font-size: small;
+  font-weight: 800;
+
+  color: white;
+}
 .colnew {
   /*margin-left: 6rem;*/
   /*margin-top: 8rem;*/
@@ -454,8 +471,7 @@ a {
   }
 }
 
-.client-logo1 {
-}
+
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
@@ -466,7 +482,7 @@ a {
   /*max-height: 10vh;*/
   width: auto;
   /* max-height: 10vh; */
-  height: 7vw;
+  height: 3vw;
 }
 
 .card {
@@ -523,8 +539,8 @@ a {
 }
 
 .col-card {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .service-image-card {
@@ -615,18 +631,39 @@ a {
 .footer-section-card {
   background-color: #000 !important;
 }
+
+.email-text {
+  font-size: 20px !important;
+}
 .offices-text {
+  font-size: 20px !important;
+
   opacity: 0.5 !important;
 }
-
+.policy-text {
+  opacity: 0.5 !important;
+  font-size: 13px !important;
+}
+.policy2-text {
+  opacity: 0.5 !important;
+  font-size: small !important;
+}
+.cert {
+  /* max-width: 100%; */
+  width: 6vmin;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .icon-footer {
-  margin-top: 2vh;
+  /*margin-top: 2vh;*/
   margin-left: 1vh;
   margin-right: 1vh;
 }
 .row-inner-footer {
   margin-bottom: 5rem !important;
 }
+
 /*  */
 /*  */
 /*  */
@@ -697,7 +734,7 @@ a {
   .service-heading {
     text-align: center;
     font-weight: 800;
-    font-size: 1rem !important;
+    font-size: 20px !important;
   }
   .headingTextService {
     font-weight: "900" !important;
