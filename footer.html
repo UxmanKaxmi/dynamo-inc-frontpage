@@ -1,27 +1,356 @@
-defaults write
-~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist
-ResponsiveDesignCustomPresetConfigurations (
-{
-rotated = 0;
-screenHeight = 1024;
-screenWidth = 600;
-userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)
-AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148
-Safari/604.1";
-},
-{
-rotated = 0;
-screenHeight = 768;
-screenWidth = “1366”;
-userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
-AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15";
-},
-{
-pixelRatio = 1;
-rotated = 0;
-screenHeight = 1080;
-screenWidth = “1920”;
-userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/537.36
-(KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36";
-}
-)
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+        <!--- basic page needs
+    ================================================== -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <title>Dynamo Inc - Apps - Marketing - Design</title>
+
+        <!--<script>
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("js");
+    </script>-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+            />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <link rel="stylesheet" href="css/styles-mobile.css" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
+            />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- favicons
+    ================================================== -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
+            />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"
+            />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"
+            />
+        <link rel="manifest" href="site.webmanifest" />
+    </head>
+
+
+
+
+    <body>
+        <header style="position: absolute; width: -webkit-fill-available">
+        </header>
+
+
+        <!--Footer Section-->
+        <div class="row container-fluid pt-5 pb-5 bg-black
+            justify-content-center footer-section-card" style="">
+
+
+            <div class="fadeInAnimation align-self-center
+                inner-footer"
+                style="">
+                <div class="row mb-5 row-inner-footer">
+                    <div class="col-md col-3 align-self-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/mobile-logo-white.png" alt=""
+                                class=".img-fluid logo-footer" />
+                        </a>
+                    </div>
+
+                    <div class="col-md">
+                        <label class="footer-heading">We are an enterprise
+                            software
+                            development company that is inspired by the
+                            future
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row mb-5 row-inner-footer">
+                    <div class="col-md col-3">
+                        <label class="text-white">
+                            <span class="fw-bolder inline-block"
+                                style="font-size:
+                                larger;">Offices:</span>
+                            <span class="offices-text inline-block"> Santa
+                                Monica, CA</span>
+                            <span class="offices-text"> Warsaw, PL</span>
+                            <span class="offices-text"> Islamabad, PK </span>
+                        </label>
+
+                    </div>
+
+                    <div class="col-md">
+                        <div class="row" style="height: 96% !important;">
+                            <div>
+                                <label class="text-white">
+                                    <span class="fw-bolder mb-1 email-text">info@dynamo-apps.com:</span>
+                                    <span>
+                                        +92 315 282 1859
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="" style="flex-direction:row;
+                                align-self:
+                                flex-end !important;">
+                                <a class="icon-footer"
+                                    href="https://www.facebook.com/dynamo.inc">
+                                    <svg width="10" height="20" viewBox="0 0 10
+                                        20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.83974
+                                            3.50354H9.59069V0.453703C9.28861
+                                            0.412143 8.2497 0.318634 7.03978
+                                            0.318634C4.51524
+                                            0.318634 2.78586 1.90669 2.78586
+                                            4.82546V7.51165H0V10.9211H2.78586V19.5H6.20146V10.9219H8.87464L9.299
+                                            7.51245H6.20066V5.16353C6.20146
+                                            4.17809
+                                            6.46678
+                                            3.50354 7.83974 3.50354Z"
+                                            fill="white" />
+                                        </svg>
+
+
+                                    </a>
+
+
+                                    <a class="icon-footer"
+                                        href="https://www.linkedin.com/company/dynamo-apps">
+                                        <svg width="22" height="22" viewBox="0 0
+                                            20
+                                            19"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.39095 2.45288C4.39095
+                                                3.5339
+                                                3.52206
+                                                4.40984
+                                                2.44964 4.40984C1.37722 4.40984
+                                                0.508331
+                                                3.5339
+                                                0.508331 2.45288C0.508331
+                                                1.37263
+                                                1.37722
+                                                0.495911
+                                                2.44964 0.495911C3.52206
+                                                0.495911
+                                                4.39095
+                                                1.37263
+                                                4.39095 2.45288ZM4.40661
+                                                5.97541H0.492676V18.5H4.40661V5.97541ZM10.6548
+                                                5.97541H6.76592V18.5H10.6556V11.9254C10.6556
+                                                8.26976 15.375 7.97073 15.375
+                                                11.9254V18.5H19.2795V10.5696C19.2795
+                                                4.40123
+                                                12.2955 4.62589 10.6548
+                                                7.66232V5.97541Z"
+                                                fill="white" />
+                                            </svg>
+
+                                        </a>
+
+
+                                        <a class="icon-footer"
+                                            href="https://www.behance.net/dynamo-inc">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="28"
+                                                height="28" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M22 7h-7v-2h7v2zm1.726
+                                                    10c-.442
+                                                    1.297-2.029
+                                                    3-5.101 3-3.074
+                                                    0-5.564-1.729-5.564-5.675
+                                                    0-3.91
+                                                    2.325-5.92 5.466-5.92 3.082
+                                                    0 4.964
+                                                    1.782
+                                                    5.375
+                                                    4.426.078.506.109 1.188.095
+                                                    2.14h-8.027c.13
+                                                    3.211
+                                                    3.483 3.312 4.588
+                                                    2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466
+                                                    0-2.277.768-2.488
+                                                    2.219zm-9.574
+                                                    6.988h-6.466v-14.967h6.953c5.476.081
+                                                    5.58
+                                                    5.444
+                                                    2.72 6.906 3.461 1.26 3.577
+                                                    8.061-3.207
+                                                    8.061zm-3.466-8.988h3.584c2.508
+                                                    0
+                                                    2.906-3-.312-3h-3.272v3zm3.391
+                                                    3h-3.391v3.016h3.341c3.055 0
+                                                    2.868-3.016.05-3.016z"
+                                                    fill="white" />
+                                                </svg>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="row mb-5 row-inner-footer">
+                                <div class="col-md col-3 align-self-end">
+                                    <label class="text-white">
+                                        <span class="policy-text">Privacy Policy</span>
+                                        <span class="policy-text">©2022 Dynamo
+                                            Inc.</span>
+                                    </label>
+
+                                </div>
+
+                                <div class="col-md">
+                                    <div class="row" style="height: 98%
+                                        !important;">
+                                        <div class="" style="flex-direction:row;
+                                            align-self:
+                                            flex-end !important;">
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert
+                                                    align-text-center"
+                                                    src="./images/cert/cert1.svg"
+                                                    />
+                                            </a>
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert
+                                                    align-text-center"
+                                                    src="./images/cert/cert2.svg"
+                                                    />
+                                            </a>
+
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert
+                                                    align-text-center"
+                                                    src="./images/cert/cert3.svg"
+                                                    />
+                                            </a>
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert
+                                                    align-text-center"
+                                                    src="./images/cert/cert4.svg"
+                                                    />
+                                            </a>
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert
+                                                    align-text-center"
+                                                    style="width:
+                                                    8vmin !important;"
+                                                    src="./images/cert/cert5.svg"
+                                                    />
+                                            </a>
+
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert hideOnMobile
+                                                    align-text-center"
+                                                    style="width:
+                                                    10vmin !important;"
+                                                    src="./images/cert/cert7.svg"
+                                                    />
+                                            </a>
+
+                                            <a>
+                                                <img alt="" class=".img-fluid
+                                                    cert hideOnMobile
+                                                    align-text-center"
+                                                    style="width:
+                                                    10vmin !important;
+                                                    -webkit-transform:
+                                                    rotate(270deg)"
+                                                    src="./images/cert/cert6.png"
+                                                    />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- LATEST CONTENT PORTFOLIO -->
+
+
+
+
+
+                    <script>
+
+  
+ 
+
+    
+  </script>
+                </body>
+
+            </html>
