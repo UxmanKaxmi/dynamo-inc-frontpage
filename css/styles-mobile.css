@@ -4,7 +4,12 @@ body {
   font-family: "Inter", sans-serif;
   color: "#7217df" !important;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y:auto;
 
+}
 @font-face {
   font-family: "SuisseIntl";
   src: url("../images/fonts/SuisseIntl-Regular.woff2");
@@ -908,6 +913,8 @@ input[type="radio"] {
   width: auto;
   display: inline-flex;
 }
+
+
 
 /*  */
 /*  */
