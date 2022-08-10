@@ -4,11 +4,11 @@ body {
   font-family: "Inter", sans-serif;
   color: "#7217df" !important;
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
-  overflow-y:auto;
-
+  overflow-y: auto;
 }
 @font-face {
   font-family: "SuisseIntl";
@@ -913,8 +913,28 @@ input[type="radio"] {
   width: auto;
   display: inline-flex;
 }
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
+.btnUpload {
+  border: 0px solid gray;
+  color: gray;
+  text-align: left;
+  background-color:transparent;
+  /* padding: 8px 20px; */
+  border-radius: 8px;
 
+}
+
+.upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
 
 /*  */
 /*  */
@@ -965,6 +985,9 @@ input[type="radio"] {
 /*  */
 
 @media (min-width: 300px) and (max-width: 500px) {
+  .logo-end{
+    display: none !important;
+  }
   .cert {
     /* max-width: 100%; */
     width: auto;
@@ -1217,7 +1240,7 @@ input[type="radio"] {
   .fixed-bottom-text-x {
     font-size: x-large;
   }
-  ]
+
   .fixed-bottom-text {
     font-size: x-small;
   }
@@ -1348,6 +1371,7 @@ input[type="radio"] {
     font-size: 1.2rem !important;
   }
 }
+
 @media (min-width: 700px) and (max-width: 900px) {
   .swiper-button {
     margin-left: 2rem;
@@ -1381,7 +1405,6 @@ input[type="radio"] {
   .headingText3 {
     font-size: 2rem;
   }
-
   .card-body {
     max-width: 100%;
     padding: 0rem !important;
@@ -1444,7 +1467,10 @@ input[type="radio"] {
   .service-heading {
     text-align: center;
     font-weight: 800;
-    font-size: 0.7rem !important;
+    font-size: 1.2rem !important;
+  }
+  .card-title {
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
