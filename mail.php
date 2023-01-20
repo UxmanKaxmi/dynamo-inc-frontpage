@@ -30,7 +30,7 @@
     print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
     exit();
   }
-  $content = "From: $name \nEmail: $email  \Phone: $phone \nMessage: $message";
+  $content = "From: $name \nEmail: $email  \nPhone: $phone \nMessage: $message";
   $recipient = "usman@dynamo-apps.com";
   $mailheader = "From: $email \r\n";
   mail($recipient,"Website Enquiry", $content, $mailheader) or die("Error!");

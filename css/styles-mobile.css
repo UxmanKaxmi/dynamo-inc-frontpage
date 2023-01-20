@@ -67,6 +67,10 @@ a {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
+.navbar {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
 
 .navbar-dark .navbar-toggler {
   color: black;
@@ -923,13 +927,12 @@ input[type="radio"] {
   border: 0px solid gray;
   color: gray;
   text-align: left;
-  background-color:transparent;
+  background-color: transparent;
   /* padding: 8px 20px; */
   border-radius: 8px;
-
 }
 
-.upload-btn-wrapper input[type=file] {
+.upload-btn-wrapper input[type="file"] {
   position: absolute;
   left: 0;
   top: 0;
@@ -985,7 +988,7 @@ input[type="radio"] {
 /*  */
 
 @media (min-width: 300px) and (max-width: 500px) {
-  .logo-end{
+  .logo-end {
     display: none !important;
   }
   .cert {
